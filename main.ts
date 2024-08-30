@@ -63,9 +63,9 @@ input.onButtonPressed(Button.AB, function () {
 })
 input.onButtonPressed(Button.B, function () {
     Numero = 0
-    Numero += randint(1, 7)
+    Numero += randint(1, 6)
     Contador = 1
-    for (let index = 0; index < 10; index++) {
+    for (let index = 0; index < Numero; index++) {
         music.play(music.builtinPlayableSoundEffect(soundExpression.giggle), music.PlaybackMode.UntilDone)
         basic.showLeds(`
             . . . . .
